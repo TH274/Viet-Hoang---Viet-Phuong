@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GAama </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="container" id="home">
+            <div class="navbar">
+                <input type="checkbox" id="check">
+                <img src="pictures/logo.png" class="logo">
+            <ul class="menu">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#developer">ABOUT</a></li>
+                <li><a href="#product">GALLERY</a></li>
+                <li><a href="#foot">CONTACTS</a></li>
+            </ul>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+            </div>
+            <div class="content">
+            <div class="left-col">
+                <h1>MUSIC<br>BRINGS<br>PEOPLE<br>TOGETHER</h1>
+            </div>
+            <div class="right-col">
+            <p>Sample music test "COTE ss2 ed"</p>
+            <img src="pictures/play.png" id="icon">
+            </div>
+        </div>
+        </div>
+        <audio id="mySong">
+            <source src="HitoShibaiClassroomOfTheEliteSeason2Ending-FuchigamiMai-7583596.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "pictures/pause.png";
+                }else{
+                    mySong.pause();
+                    icon.src = "pictures/play.png";
+                }
+            }
+        </script>
+    </body>
+    <section class="about">
+    <div class="sec">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/df4z3cg-368c337e-2d8c-4a1f-94e9-950ba93e721e.png/v1/fill/w_1280,h_1494,strp/spy_x_family_render__anya__by_minhchauk1k_df4z3cg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGY0ejNjZy0zNjhjMzM3ZS0yZDhjLTRhMWYtOTRlOS05NTBiYTkzZTcyMWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ._nA9LIjUquiSB9YyD--W68BS5GY16vqGYHSjCAl69DQ">
+        <div class="about-text">
+        <h1 id="developer"> ABOUT US </h1>
+        <h5> Viet Hoang: Developer<span> & Viet Phuong: Designer</span></h5>
+        <div class="media-icon">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <p>We are the web developer of the hanu's music playgrounds and a music designer. I love making because Music is something that we all enjoy in the course of our lives.
+        It is the sound that is brought together through a harmony of instruments and singing voices. It is something that is part of us ever since
+        we enter this world. Our mothers, fathers and grandparents sing us lullabies so that we can sleep peacefully. In the mornings, we listen to 
+        the birds chirping and the leaves of plants and trees rustling, and even this is like music to our ears. Music is everywhere, and all you have 
+        to do is open up your ears to hear it.<br><br>Music is a vital part of different moments of human life. It spreads happiness and joy in a person's life.
+        Music is the soul of life and gives immense peace to us. In the words of William Shakespeare, 
+        “If music is the food of love, play on, Give me excess of it; that surfeiting, The appetite may sicken, and so die.” 
+        Thus, Music helps us in connecting with our souls or real self.</p>
+        <button type="button" onclick="window.location.href='#product';">Let's See!!</button>
+    </div>
+    </div>
+    </section>
+    <div class="contain">
+
+        <h1 class="heading" id="product"> OUR<span> GALLERY</span></h1>
+    
+        <div class="box-container">
+    
+            <div class="box" data-src="pictures/music-1.mp3">
+                <div class="image">
+                    <div class="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/052/421/451/large/julia-shi-final-v1-curtains.jpg?1659732236" alt="">
+                </div>
+                <div class="content">
+                </div>
+            </div>
+    
+            <div class="box" data-src="pictures/music-2.mp3">
+                <div class="image">
+                    <div class="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <img src="https://f4.bcbits.com/img/a2478406997_16.jpg" alt="">
+                </div>
+                <div class="content">
+                </div>
+            </div>
+    
+            <div class="box" data-src="pictures/music-3.mp3">
+                <div class="image">
+                    <div class="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <img src="https://cdn.dribbble.com/users/1642242/screenshots/10150301/media/1683aa10baffb27c1d7111b37c84cdb8.jpg?compress=1&resize=1000x750&vertical=top" alt="">
+                </div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="box" data-src="pictures/music-4.mp3">
+                <div class="image">
+                    <div class="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <img src="https://media.pitchfork.com/photos/6323309510c581ffac68ce4e/1:1/w_320/Mavi.jpg" alt="">
+                </div>
+                <div class="contents">
+                </div>
+            </div>
+                </div>
+            </div> 
+    <div class="music-player">
+        <div id="close-player" class="fas fa-angle-up"></div>
+        <h3 class="music-title">Current song</h3>
+        <audio src="" controls></audio>
+    </div>
+    <div class="footer" id="foot">
+            <div class="footer-text">
+    <h1>CONTACT US</h1>
+    <form>      
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="THANK YOU!"/>
+        <div class="media-body">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+            </div>
+      </form>
+    </div>
+    </div>
+</html>
